@@ -1,0 +1,16 @@
+<!--div class="text-center mt-4">
+<button type="button"y class="btn btn-outline-warning ">{{title}}</button>
+</div>
+<div class="alert alert-warning alert-dismissible text-center"style="width: 35rem;height: 20rem;">
+  <button type="button" class="btn-close " data-bs-dismiss="alert"></button>
+  <img [src]="img1"height="100vh" alt="">
+  <h1>{{monk}}</h1-->
+    <div class="container"style="background-color:#007bff;margin-top:20px;padding: 50px;">
+      <div class="row">
+    <div class="col-lg-4"*ngFor="let item1 of pricingData">
+      <app-show-popup [item1]="item1"></app-show-popup>
+    </div>
+  </div>
+    </div>
+    
+<router-outlet></router-outlet>
